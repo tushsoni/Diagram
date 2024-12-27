@@ -340,6 +340,11 @@ mxStencilRegistry.allowEval = false;
 
 			if (currentFile != null)
 			{
+				if (editorUi.editor.graph.isEditing())
+				{
+					editorUi.editor.graph.stopEditing();
+				}
+
 				reply.isModified = currentFile.isModified();
 				reply.draftPath = EditorUi.enableDrafts && currentFile.fileObject? currentFile.fileObject.draftFileName : null;
 			}

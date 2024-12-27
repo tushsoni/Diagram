@@ -44,8 +44,7 @@ function main()
 		document.body.innerText = '';
 		var div = document.createElement('div');
 		div.style.fontFamily = 'Arial';
-		var darkMode = window.parent.Editor.cssDarkMode ||
-			(typeof window.parent.Editor.isDarkMode === 'function' &&
+		var darkMode = (typeof window.parent.Editor.isDarkMode === 'function' &&
 			window.parent.Editor.isDarkMode());
 
 		window.parent.listBrowserFiles(function(filesInfo)

@@ -9,6 +9,7 @@
 .geFormatContainer, .geTab, .geStatus > *,
 .geSearchSidebar input, .geSpinnerStatus {
 	font-size:14px !important;
+	line-height:14px !important;
 }
 .geEditor div.mxTooltip {
 	font-size: 12px;
@@ -16,23 +17,25 @@
 .geHint {
 	font-size:11pt;
 }
-body.geLegacyDarkMode *:not(svg *, .mxCellEditor, .mxCellEditor *, .geButton, .geLabel,
-img, .geIcon, .geDarkMode *, .geToolbarButton), .geLegacyDarkMode *::-webkit-scrollbar-thumb,
-.geLegacyDarkMode div.mxWindow, .geLegacyDarkMode .geToolbarContainer,
-html > body.geLegacyDarkMode > div > div.geToolbarContainer.geSimpleMainMenu,
-.geLegacyDarkMode .geActiveItem, .geLegacyDarkMode .geBtn, .geLegacyDarkMode .geEditor select,
-.geLegacyDarkMode .geSidebarTooltip, .geLegacyDarkMode html body button.gePrimaryBtn,
-.geLegacyDarkMode .geEditor button, .geLegacyDarkMode html body .geDialog button.gePrimaryBtn {
+body.geDarkMode *:not(svg *, .mxCellEditor, .mxCellEditor *, .geButton, .geLabel,
+img, .geIcon, .geDarkMode *, .geToolbarButton), .geDarkMode *::-webkit-scrollbar-thumb,
+.geDarkMode div.mxWindow, .geDarkMode .geToolbarContainer,
+html > body.geDarkMode > div > div.geToolbarContainer.geSimpleMainMenu,
+.geDarkMode .geActiveItem, .geDarkMode .geBtn, .geDarkMode .geEditor select,
+.geDarkMode .geSidebarTooltip, .geDarkMode html body button.gePrimaryBtn,
+.geDarkMode .geEditor button, .geDarkMode html body .geDialog button.gePrimaryBtn {
 	border-color: #ffffff !important;
 	color: #ffffff !important;
 }
-*:not(svg *, .mxCellEditor, .mxCellEditor *, .geButton, .geLabel,
-img, .geIcon, input, .geSpinnerStatus), div.mxWindow,
-.geToolbarContainer, .geActiveItem, .geBtn,
-.geToolbarButton, .geEditor select, .geSidebarTooltip,
-html body .geDialog button.gePrimaryBtn:not(.geLegacyDarkMode *),
-.geTitle, html body button.gePrimaryBtn, .geEditor button,
-*::-webkit-scrollbar-thumb {
+*:not(svg *, .mxCellEditor, .mxCellEditor *, .geButton, .geLabel, img, .geIcon,
+.geSpinnerStatus, .geInverseToolbarButton input), div.mxWindow, .geToolbarContainer,
+.geActiveItem, .geBtn, .geToolbarButton:not(.geInverseToolbarButton), .geEditor select,
+.geSidebarTooltip, html body .geDialog button.gePrimaryBtn:not(.geDarkMode *), .geTitle,
+html body button.gePrimaryBtn, .geEditor button, *::-webkit-scrollbar-thumb {
+	border-color: light-dark(#000000, #FFFFFF) !important;
+	color: light-dark(#000000, #FFFFFF) !important;
+}
+.geDarkMode .geInverseToolbarButton {
 	border-color: #000000 !important;
 	color: #000000 !important;
 }
@@ -57,22 +60,19 @@ html body button.gePrimaryBtn, html body .geDialog button.gePrimaryBtn,
 .geActiveItem {
 	background-color: lightgray !important;
 }
-div.mxWindow *, .geToolbarContainer *, .geActiveItem:not(.geLegacyDarkMode *),
+div.mxWindow *, .geToolbarContainer *, .geActiveItem:not(.geDarkMode *),
 .geBtn, .geToolbarButton, .geTab .geAdaptiveAsset:not(.geDisabledControlTab *, :hover),
 .geTitle img {
 	opacity: 1 !important;
 }
-html body.geLegacyDarkMode a.geActiveItem.geAdaptiveAsset {
+html body.geDarkMode a.geActiveItem.geAdaptiveAsset {
 	filter: none !important;
 }
-html body a.geActiveItem.geAdaptiveAsset:not(.geLegacyDarkMode *),
+html body a.geActiveItem.geAdaptiveAsset:not(.geDarkMode *),
 html body .geActivePage {
 	filter: invert(100%) !important;
 }
-html body.geEditor.geLegacyDarkMode div.mxRubberband {
-	border-color:#ffffff !important;
-}
 html body.geEditor div.mxRubberband {
 	border-style:solid !important;
-	border-color:#000000 !important;
+	border-color:light-dark(#000000, #ffffff) !important;
 }

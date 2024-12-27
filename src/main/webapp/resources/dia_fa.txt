@@ -6,7 +6,6 @@ accessDenied=‫دسترسی مجاز نیست.‬
 accounts=Accounts
 action=Action
 actualSize=‫سایز واقعی‬
-adaptiveColors=‫رنگ های تطبیقی‬
 add=‫افزودن‬
 addAccount=Add account
 addedFile=‫اضافه شد {1}‬

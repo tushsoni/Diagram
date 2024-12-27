@@ -6,7 +6,6 @@ accessDenied=Acces refuzat
 accounts=Conturi
 action=Acțiune
 actualSize=Dimensiune reală
-adaptiveColors=Culori adaptive
 add=Adaugă
 addAccount=Adaugă cont
 addedFile=Adăugat {1}

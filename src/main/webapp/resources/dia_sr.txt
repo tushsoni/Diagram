@@ -6,7 +6,6 @@ accessDenied=Pristup je odbijen
 accounts=Accounts
 action=Action
 actualSize=Prirodna veličina
-adaptiveColors=Адаптиве Цолорс
 add=Dodaj
 addAccount=Add account
 addedFile=Dodat {1}
