@@ -1,3 +1,11 @@
+03-JAN-2024: 26.0.3
+
+- Fixes slope angle property for parallelogram and hexagon [jgraph/drawio#3672]
+- Adds arcSize property for chevron [jgraph/drawio#4813]
+- Adds units for width, height and length [jgraph/drawio#4362]
+- [conf cloud] Fixed Safari dark mode [DID-14095]
+- Fixes missing data-cell-id in EditorUi.getEmbeddedSvg [jgraph/drawio#4532]
+
 29-DEC-2024: 26.0.2
 
 - NPE fixes
