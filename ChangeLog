@@ -1,3 +1,8 @@
+06-JAN-2024: 26.0.4
+
+- Disables dark mode in viewer by default [jgraph/drawio#3701]
+- Adds dark mode option in embed dialog
+
 03-JAN-2024: 26.0.3
 
 - Fixes slope angle property for parallelogram and hexagon [jgraph/drawio#3672]
