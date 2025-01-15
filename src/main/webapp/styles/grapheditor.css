@@ -26,12 +26,13 @@ html body.geSimple.geDarkMode .geMenubarContainer .geToolbarButton {
 html body.geEditor.geMinimal:not(.geDarkMode) div.diagramContainer button.gePrimaryBtn,
 html body.geEditor.geMinimal:not(.geDarkMode) .mxWindow button.gePrimaryBtn,
 html body.geEditor.geMinimal:not(.geDarkMode) .geDialog button.gePrimaryBtn,
-html body.geEditor.geSimple .gePrimaryBtn {
+html body.geEditor .gePrimaryBtn {
 	background: light-dark(#29b6f2, var(--dark-accent-color));
+	color:light-dark(#ffffff, var(--dark-text-color));
 	box-shadow: none;
 	border: none;
 }
-html body.geEditor.geSimple .gePrimaryBtn:hover:not([disabled]) {
+html body.geEditor .gePrimaryBtn:hover:not([disabled]) {
 	background: light-dark(#12a2e0, var(--dark-active-accent-color));
 	box-shadow: none;
 	border: none;
@@ -239,7 +240,7 @@ html body.geDarkMode .geVsplit, html body.geDarkMode table.mxPopupMenu hr {
 }
 html body.geDarkMode .geToolbarContainer .geButton:hover, html body.geDarkMode .geToolbarContainer .geButton:active,
 html body.geDarkMode .geToolbarContainer .geLabel:hover, html body.geDarkMode .geToolbarContainer .geLabel:active,
-html body.geDarkMode .geVsplit:hover, html .geSidebarContainer button:active:not([disabled]) {
+html body.geDarkMode .geVsplit:hover {
 	background-color:var(--dark-color);
 }
 html body.geDarkMode .geToolbarContainer .geButton.geAdaptiveAsset:hover {
@@ -527,6 +528,7 @@ a.geStatus .geStatusMessage {
 .geEditor select:hover:not([disabled]), .geColorBtn:hover:not([disabled]) {
 	background-color:light-dark(var(--border-color), var(--dark-border-color));
 }
+.geToolbarContainer .geButton:active, .geToolbarContainer .geLabel:active,
 .geEditor button:active:not([disabled], .geBigButton, .geShareBtn),
 .geColorBtn:active:not([disabled]) {
 	opacity:0.7;
@@ -602,20 +604,6 @@ html .geColorBtn {
 html .geColorBtn:disabled {
 	opacity:0.5;
 }
-html .geEditor .gePrimaryBtn {
-	background:linear-gradient(light-dark(#4d90fe, var(--dark-accent-color)) 0px, light-dark(#4787ed, var(--dark-accent-color)) 100%);
-	border:1px solid light-dark(#3079ed, transparent);
-	color:light-dark(#ffffff, var(--dark-text-color));
-}
-html .geEditor .gePrimaryBtn:hover:not([disabled]), html .geEditor .gePrimaryBtn:focus {
-	background:linear-gradient(light-dark(#4d90fe, var(--dark-active-accent-color)) 0px, light-dark(#357ae8, var(--dark-active-accent-color)) 100%);
-	border:1px solid light-dark(#2f5bb7, transparent);
-}
-.geEditor button.geShareBtn {
-	background-color:#F2931E;
-	border-color:#F08705;
-	color:#000000;
-}
 .geAlertLink {
 	color:#843534;
 	font-weight:700;
@@ -647,11 +635,6 @@ html .geToolbarButton:active:not([disabled]) {
 }
 .geToolbarContainer .geButton:hover {
 	opacity:1;
-	background: #eee;
-	border-radius:2px;
-}
-.geToolbarContainer .geButton:active, .geToolbarContainer .geLabel:active {
-	background: #F8C382;
 }
 .geToolbarContainer .geLabel:hover {
 	background: #eee;
@@ -776,6 +759,9 @@ div.mxWindow .geButton {
 	border-radius:8px;
 }
 .geActiveItem {
+	background-color:light-dark(var(--border-color), var(--dark-border-color));
+}
+.geAdaptiveAsset.geActiveItem {
 	background-color:light-dark(var(--border-color), var(--dark-inverse-active-color));
 }
 .geTabMenuButton {

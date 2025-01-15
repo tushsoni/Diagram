@@ -1,9 +1,21 @@
-06-JAN-2024: 26.0.4
+15-JAN-2025: 26.0.6
+
+- Various dark mode improvements
+
+10-JAN-2025: 26.0.5
+
+- Fixes Ctrl+Shift+G to enable grid [jgraph/drawio#4825]
+- Replaces three dots with layers icon [jgraph/drawio-desktop#1953]
+- Mermaid2drawio: Added support for new flowchart shapes and fixed [jgraph/drawio-#4832]
+- Adds editableCssRules=.* for imported SVG images [jgraph/drawio#4721]
+- Adds default and font keyword for stencil colors [jgraph/drawio#4723]
+
+06-JAN-2025: 26.0.4
 
 - Disables dark mode in viewer by default [jgraph/drawio#3701]
 - Adds dark mode option in embed dialog
 
-03-JAN-2024: 26.0.3
+03-JAN-2025: 26.0.3
 
 - Fixes slope angle property for parallelogram and hexagon [jgraph/drawio#3672]
 - Adds arcSize property for chevron [jgraph/drawio#4813]

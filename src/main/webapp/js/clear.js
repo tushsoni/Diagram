@@ -11,6 +11,7 @@ try
 		document.body.appendChild(document.createElement('br'));
 	};
 	
+	writeln('');
 	write('Clearing Cached version ' + EditorUi.VERSION + '...');
 
 	navigator.serviceWorker.getRegistrations().then(function(registrations)
@@ -29,10 +30,11 @@ try
 			writeln('OK');
 		}
 		
-		var link = document.createElement('a');
-		link.style.marginRight = '6px';
-		link.setAttribute('href', 'javascript:window.location.reload();');
-		link.appendChild(document.createTextNode('Reload'));
+		writeln('');
+		var link = document.createElement('button');
+		link.style.margin = '4px';
+		link.setAttribute('onclick', 'window.location.reload();');
+		link.appendChild(document.createTextNode('Update'));
 		document.body.appendChild(link);
 
 		if ((/test\.draw\.io$/.test(window.location.hostname)) ||
@@ -40,7 +42,7 @@ try
 			(/app\.diagrams\.net$/.test(window.location.hostname)))
 		{
 			link = link.cloneNode(false);
-			link.setAttribute('href', './');
+			link.setAttribute('onclick', 'window.location.href = "/.";');
 			link.appendChild(document.createTextNode('Start App'));
 			document.body.appendChild(link);
 		}
