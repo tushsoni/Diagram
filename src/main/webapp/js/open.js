@@ -130,10 +130,12 @@ function main()
 							var ctrlTd = document.createElement('td');
 							row.appendChild(ctrlTd);
 							ctrlTd.style.textAlign = 'center';
-							var img = document.createElement('span');
-							img.className = 'geSprite geSprite-delete';
+							var img = document.createElement('img');
+							img.src = window.parent.Editor.trashImage;
 							img.style.cursor = 'pointer';
 							img.style.display = 'inline-block';
+							img.style.width = '18px';
+							img.setAttribute('title', window.parent.mxResources.get('delete'));
 							ctrlTd.appendChild(img);
 							
 							if (darkMode)

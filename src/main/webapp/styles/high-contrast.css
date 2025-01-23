@@ -11,8 +11,14 @@
 	font-size:14px !important;
 	line-height:14px !important;
 }
+.geSidebarContainer .geTitle:hover {
+	background-color: light-dark(#c0c0c0, #414141) !important;
+}
 .geEditor div.mxTooltip {
 	font-size: 12px;
+}
+.geAdaptiveAsset, .geColorBtn > div:has(.geAdaptiveAsset) {
+	opacity: 1 !important;
 }
 .geHint {
 	font-size:11pt;
@@ -27,14 +33,20 @@ html > body.geDarkMode > div > div.geToolbarContainer.geSimpleMainMenu,
 	border-color: #ffffff !important;
 	color: #ffffff !important;
 }
-*:not(svg *, .mxCellEditor, .mxCellEditor *, .geButton, .geLabel, img, .geIcon,
-.geSpinnerStatus, .geInverseToolbarButton input), div.mxWindow, .geToolbarContainer,
-.geActiveItem, .geBtn, .geToolbarButton:not(.geInverseToolbarButton), .geEditor select,
-.geSidebarTooltip, html body .geDialog button.gePrimaryBtn:not(.geDarkMode *), .geTitle,
-html body button.gePrimaryBtn, .geEditor button, *::-webkit-scrollbar-thumb {
+*:not(svg *, .mxCellEditor, .mxCellEditor *, .geButton, .geLabel, img, .geIcon, .geSpinnerStatus,
+.geInverseToolbarButton input, .geMinimal.geDarkMode .geMenubarContainer .geMenuItem .geMenuItem,
+.geToolbarButton.geInverseToolbarButton), div.mxWindow, .geToolbarContainer, .geActiveItem, .geBtn,
+.geToolbarButton:not(.geInverseToolbarButton), .geEditor select, .geSidebarTooltip, html body .geDialog
+button.gePrimaryBtn:not(.geDarkMode *), .geTitle, html body button.gePrimaryBtn, .geEditor button,
+*::-webkit-scrollbar-thumb {
 	border-color: light-dark(#000000, #FFFFFF) !important;
 	color: light-dark(#000000, #FFFFFF) !important;
 }
+.geSketch .geToolbarContainer {
+	box-shadow: none !important;
+	border-width:1px;
+	border-style:solid;
+};
 .geDarkMode .geInverseToolbarButton {
 	border-color: #000000 !important;
 	color: #000000 !important;

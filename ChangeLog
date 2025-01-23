@@ -1,3 +1,11 @@
+22-JAN-2025: 26.0.7
+
+- Fixes for Atlas theme dark mode
+- Dark mode fixes
+- Changes raster images to SVG
+- Stroke width fix for some BPMN2 shapes. Ticket [jgraph/drawio#4861]
+- [conf cloud] Adds disableGithubEmbedding config to hide Github tab from embed editor [DID-14232]
+
 15-JAN-2025: 26.0.6
 
 - Various dark mode improvements
