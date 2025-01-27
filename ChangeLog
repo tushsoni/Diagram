@@ -1,3 +1,13 @@
+27-JAN-2025: 26.0.9
+
+- Fixes possible split is not a function in StyleFormatPanel
+- Uses light custom background with simple adaptive colors [jgraph/drawio-desktop#1978]
+
+24-JAN-2025: 26.0.8
+
+- Improves VSDX Import [DID-14176]
+- [conf cloud]] Fixes Gliffy diagrams with core ui icons [DID-14260]
+
 22-JAN-2025: 26.0.7
 
 - Fixes for Atlas theme dark mode
