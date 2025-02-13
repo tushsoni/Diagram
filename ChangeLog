@@ -1,3 +1,32 @@
+12-FEB-2025: 26.0.13
+
+- Adds appearance option in publish and embed dialogs
+- Forces light export of diagrams with no adaptive colors
+- Skips light-dark function for same light and dark color
+- [conf cloud] Adds support for pagePin in Gliffy import
+- Adds enableLightDarkColors configuration
+
+07-FEB-2025: 26.0.12
+
+- [conf cloud] Fixes simple view of imported Gliffy diagrams [DID-14343]
+- [conf cloud] Disable direct editing if a page has unpublished changes [DID-14257]
+- Fixes handling of Ctrl+Enter on Windows [jgraph/drawio#4883]
+- Adds transparent background option in iframe embed dialog [jgraph/drawio#4884]
+- Handles Ctrl+S while editing labels [jgraph/drawio#4885]
+- Fixes editing toolbar alignment in embed mode [jgraph/drawio#4874]
+- Updates DOMPurify from 3.2.3 to 3.2.4
+- Handles subgroups in GitLab paths [jgraph/drawio#4870]
+
+04-FEB-2025: 26.0.11
+
+- [conf cloud] Show error when embed diagram page not found (deleted or restricted) [DID-14304]
+- [conf cloud] Fixed realtime collaboration [DID-12871]
+
+28-JAN-2025: 26.0.10
+
+- [conf cloud] Fixes Gliffy mass import of linked diagrams when done in separate runs [DID-14151]
+- Enhanced page links in vsdx import [DID-14276]
+
 27-JAN-2025: 26.0.9
 
 - Fixes possible split is not a function in StyleFormatPanel
