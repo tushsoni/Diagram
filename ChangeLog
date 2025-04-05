@@ -1,3 +1,9 @@
+05-APR-2025: 26.2.8
+
+- Adds ALLOW_INTERNAL_10_NET=1 for 10.x.x.x proxy usage [jgraph/drawio#4966]
+- Adds try/catch for TENANT_ID exception [jgraph/drawio#4909]
+- Moves mermaid2drawio.js back into public build
+
 05-APR-2025: 26.2.7
 
 - [conf cloud] and GraphViewer. Removes tooltips config. Pages use file tooltips config [DID-14767]
