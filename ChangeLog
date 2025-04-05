@@ -1,4 +1,34 @@
-31-MAR_2025: 26.2.2
+05-APR-2025: 26.2.7
+
+- [conf cloud] and GraphViewer. Removes tooltips config. Pages use file tooltips config [DID-14767]
+- Fixes filename and comments button for Conf Cloud
+
+04-APR-2025: 26.2.6
+
+- Updates DOMPurify from 3.2.4 to 3.2.5
+- Adds primaryColor option for custom shape properties
+- Adds mxUtils.getColorValue
+- [conf cloud] Adds support for live docs [DID-14520]
+- Adds Note shape in Misc sidebar
+- [conf cloud] Fixed migrated server custom libraries names [DID-14902]
+
+03-APR-2025: 26.2.5
+
+- Fixes Google Drive folder picker z-index
+- Fixes OneDrive folder picker size
+- [conf cloud] Fixes headers anchor [DID-14864]
+
+02-APR-2025: 26.2.4
+
+- Fixes possible NPE in Sidebar.disablePointerEvents
+- [conf cloud] Added support for imported Gliffy images with the added version prefix to the name [DID-14867]
+- Fixes possible NPE in ColorDialog
+
+01-APR-2025: 26.2.3
+
+- [conf cloud] Fixes viewer background
+
+31-MAR-2025: 26.2.2
 
 - Adds Tamil translations
 - Fixes Confluence cloud lightbox [DID-14879]

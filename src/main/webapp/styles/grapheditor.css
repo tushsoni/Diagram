@@ -164,6 +164,14 @@ div[id*="dgeMermaidOutput-"] {
 	width: 100%;
 }
 
+.geSmallAppIcon {
+	padding: 0 4px 0 8px;
+}
+
+.geAtlas .geSmallAppIcon {
+	padding-left: 8px;
+}
+
 .geAppIcon {
 	display: block;
 	position: absolute;
@@ -503,6 +511,11 @@ html body.geEditor .gePrimaryBtn:hover:not([disabled]) {
 	margin-right: 6px;
 	padding: 3px 8px;
 	box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .11), inset 0 -1px 0 0 rgba(0, 0, 0, .08), 0 1px 2px 0 rgba(0, 0, 0, .04);
+}
+
+.geDarkMode .geButtonGroup {
+	border-style: solid;
+    border-width: 1px;
 }
 
 .geButtonGroup .geButton {
@@ -866,7 +879,7 @@ div td.mxWindowTitle {
 }
 
 .geButtonContainer {
-	padding-right: 8px;
+	padding-right: 14px;
 	display: inline-flex;
 	align-items: center;
 	margin-left: auto;
@@ -939,6 +952,10 @@ div td.mxWindowTitle {
 
 .geEmbed .geMenubarContainer:not(.geMinimal *) {
 	padding: 0 28px 0 16px;
+}
+
+.geEditor.geClassic .geMenubarContainer {
+	padding-left: 4px;
 }
 
 .geSidebarContainer a,
@@ -1055,10 +1072,19 @@ div.geFormatContainer {
 	flex-shrink: 0;
 }
 
+.geEmbed.geAtlas>.geMenubarContainer>.geStatusDiv,
 .geClassic.geEmbed.geCompactMode>.geMenubarContainer>.geStatusDiv {
 	position: fixed;
     right: 16px;
     top: 6px;
+}
+
+.geClassic.geEmbed.geCompactMode>.geMenubarContainer>.geStatusDiv {
+    top: 6px;
+}
+
+.geEmbed.geAtlas>.geMenubarContainer>.geStatusDiv {
+    top: 16px;
 }
 
 html body div.geSmallBanner {
@@ -1544,7 +1570,7 @@ a.geStatus>div {
 	padding: 1px;
 }
 
-.geButton.geRoundButton {
+.geButton.geRoundButton:not(.geEmbed.geCompactMode .geButtonContainer .geButton) {
 	background-size: 24px 24px;
 	justify-content: center;
 	box-sizing: content-box;
@@ -1856,6 +1882,11 @@ a.geStatus>div {
 	transform: translate(-50%, -50%);
 	z-index: 10004;
 	box-sizing: border-box;
+}
+
+.geEditor .picker-dialog,
+.geEditor .picker-dialog-bg {
+	z-index: 10004;
 }
 
 .geDialog.geInlineDialog {
@@ -2735,7 +2766,6 @@ table.geProperties tr td {
 }
 
 .geAtlas .geMenubar .geButtonContainer {
-	padding-right: 8px;
 	margin-top: 0px;
 }
 
@@ -2759,8 +2789,9 @@ table.geProperties tr td {
 }
 
 .geEditor.geAtlas>.geMenubarContainer .geMenubar {
-	padding-left: 0px;
+	padding-left: 12px;
 	height: 100%;
+	top: 0;
 }
 
 .geAtlas .geMenubarContainer .geItem {
