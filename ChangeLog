@@ -1,3 +1,11 @@
+11-JUL-2025: 28.0.3
+
+- Activates convert HTML to SVG and removes feature flag
+
+11-JUL-2025: 28.0.2
+
+- Conf Cloud: Handled incorrect return value from convert-ids-to-types API [DID-15536]
+
 10-JUL-2025: 28.0.1
 
 - Adds some HTML to SVG conversion
