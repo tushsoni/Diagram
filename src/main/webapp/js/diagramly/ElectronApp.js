@@ -1064,6 +1064,11 @@ mxStencilRegistry.allowEval = false;
 	
 	EditorUi.prototype.normalizeFilename = function(title, defaultExtension)
 	{
+		if (!title || typeof title !== 'string')
+		{
+			title = mxResources.get('untitledDiagram');
+		}
+
 		var tokens = title.split('.');
 		var ext = (tokens.length > 1) ? tokens[tokens.length - 1] : '';
 		defaultExtension = (defaultExtension != null) ? defaultExtension : 'drawio';

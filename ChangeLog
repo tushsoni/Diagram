@@ -1,3 +1,10 @@
+12-JUL-2025: 28.0.4
+
+- Adds pages option to export URL dialog
+- Handles backgroundColor in HTML to SVG
+- Adds resizing for plantuml and mermaid edit dialog
+- Removes image option in plantuml dialog
+
 11-JUL-2025: 28.0.3
 
 - Activates convert HTML to SVG and removes feature flag
