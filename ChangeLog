@@ -1,3 +1,9 @@
+16-JUL-2025: 28.0.5
+
+- [conf cloud] Stops converting server macro with aspectHash to embed macro [DID-15703]
+- Add LC case for UserImage2Block shape [DID-15706]
+- Fixes mermaid colors in dark mode [DID-15734]
+
 12-JUL-2025: 28.0.4
 
 - Adds pages option to export URL dialog
