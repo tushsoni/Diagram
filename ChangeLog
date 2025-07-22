@@ -1,3 +1,7 @@
+17-JUL-2025: 28.0.6
+
+- Fixes missing File menu option
+
 16-JUL-2025: 28.0.5
 
 - [conf cloud] Stops converting server macro with aspectHash to embed macro [DID-15703]
