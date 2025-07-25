@@ -1,3 +1,9 @@
+25-JUL-2025: 28.0.7
+
+- Fixes zoom out icon in draft dialog [jgraph/drawio-desktop#2154]
+- Fixes clipboard.read is not a function
+- [conf cloud] Fixes page IDs import, page is not found [DID-15536]
+
 17-JUL-2025: 28.0.6
 
 - Fixes missing File menu option
